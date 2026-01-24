@@ -7,63 +7,67 @@ export default function Courses() {
   const { t } = useLanguage();
   const { theme } = useTheme();
 
-const courses = [
+  // Массив курсов с вызовом t() внутри useLanguage
+  const courses = [
   {
     id: 1,
-    title: 'English Beginning',
-    description: 'Основы английского языка с нуля',
+    title: t('courses.englishBeginning.title'),
+    description: t('courses.englishBeginning.description'),
     duration: 12,
-    level: t('courses.beginner'),
+    level: t('courses.englishBeginning.level'),
     price: '₽3,800',
     image: 'https://liberianinvestigator.com/wp-content/uploads/2025/08/English.jpeg',
   },
   {
     id: 2,
-    title: 'English Elementary',
-    description: 'Базовое общение и простые фразы',
+    title: t('courses.englishElementary.title'),
+    description: t('courses.englishElementary.description'),
     duration: 6,
-    level: t('courses.elementary'),
+    level: t('courses.englishElementary.level'),
     price: '₽3,800',
     image: 'https://img.freepik.com/free-vector/hand-drawn-english-school-background_23-2149496629.jpg',
   },
   {
     id: 3,
-    title: 'English Pre-Intermediate',
-    description: 'Уверенное понимание и разговор',
+    title: t('courses.englishPreIntermediate.title'),
+    description: t('courses.englishPreIntermediate.description'),
     duration: 10,
-    level: t('courses.pre-intermediate'),
+    level: t('courses.englishPreIntermediate.level'),
     price: '₽3,800',
     image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=400',
   },
   {
     id: 4,
-    title: 'English Intermediate',
-    description: 'Разговорный английский для жизни и работы',
+    title: t('courses.englishIntermediate.title'),
+    description: t('courses.englishIntermediate.description'),
     duration: 8,
-    level: t('courses.intermediate'),
+    level: t('courses.englishIntermediate.level'),
     price: '₽3,800',
     image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400',
   },
   {
     id: 5,
-    title: 'English Upper-Intermediate',
-    description: 'Английский для карьеры и обучения',
+    title: t('courses.englishUpperIntermediate.title'),
+    description: t('courses.englishUpperIntermediate.description'),
     duration: 14,
-    level: t('courses.upperIntermediate'),
+    level: t('courses.englishUpperIntermediate.level'),
     price: '₽3,800',
     image: 'https://images.pexels.com/photos/3184634/pexels-photo-3184634.jpeg?auto=compress&cs=tinysrgb&w=400',
   },
   {
     id: 6,
-    title: 'English Advanced',
-    description: 'Свободный английский на продвинутом уровне',
+    title: t('courses.englishAdvanced.title'),
+    description: t('courses.englishAdvanced.description'),
     duration: 8,
-    level: t('courses.advanced'),
+    level: t('courses.englishAdvanced.level'),
     price: '₽3,800',
     image: 'https://images.pexels.com/photos/3184424/pexels-photo-3184424.jpeg?auto=compress&cs=tinysrgb&w=400',
   },
 ];
- return (
+
+
+
+  return (
     <div className={`min-h-screen py-20 ${theme === 'dark' ? 'bg-gray-900' : 'bg-white'} transition-colors`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">

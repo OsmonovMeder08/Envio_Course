@@ -7,6 +7,7 @@ const languages = [
   { code: 'ru', name: 'Русский', flag: '🇷🇺' },
   { code: 'kg', name: 'Кыргызча', flag: '🇰🇬' },
   { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'es', name: 'Español', flag: '🇪🇸' },
 ];
 
 export default function LanguageSwitcher() {
@@ -16,7 +17,7 @@ export default function LanguageSwitcher() {
   const currentLang = languages.find((lang) => lang.code === language);
 
   const handleLanguageChange = (code: string) => {
-    setLanguage(code as 'ru' | 'en' | 'kg' | 'de');
+    setLanguage(code as 'ru' | 'en' | 'kg' | 'de' | 'es');
     setIsOpen(false);
   };
 

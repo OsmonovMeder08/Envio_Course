@@ -12,11 +12,26 @@ export default function Contact() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Сообщение отправлено! Мы свяжемся с вами в ближайшее время.');
-    setFormData({ name: '', email: '', message: '' });
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        alert('Сообщение отправлено! Мы свяжемся с вами в ближайшее время.');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        alert('Ошибка при отправке. Попробуйте позже.');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('Ошибка сети. Попробуйте позже.');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -111,7 +126,7 @@ export default function Contact() {
 
           {/* Contact Information */}
           <div className="space-y-8">
-            <div className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-gradient-to-br from-blue-50 to-purple-50'} rounded-xl p-8 transition-colors`}>
+            <div className={`rounded-xl p-8 transition-colors ${theme === 'dark' ? 'bg-gray-800' : 'bg-gradient-to-br from-blue-50 to-purple-50'}`}>
               <h2 className={`text-2xl font-bold mb-6 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
                 {t('contact.info')}
               </h2>
@@ -123,7 +138,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className={`font-semibold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>{t('contact.phone')}</h3>
-                    <p className={theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}>+996 (505)147052</p>
+                    <p className={theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}>{t('contact.phone.value')}</p>
                   </div>
                 </div>
 
@@ -132,8 +147,8 @@ export default function Contact() {
                     <Mail className="w-6 h-6 text-purple-600" />
                   </div>
                   <div>
-                    <h3 className={`font-semibold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Email</h3>
-                    <p className={theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}>envio@gmail.com</p>
+                    <h3 className={`font-semibold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>{t('contact.email')}</h3>
+                    <p className={theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}>{t('contact.email.value')}</p>
                   </div>
                 </div>
 
@@ -142,8 +157,8 @@ export default function Contact() {
                     <MapPin className="w-6 h-6 text-green-600" />
                   </div>
                   <div>
-                    <h3 className={`font-semibold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Адрес</h3>
-                    <p className={theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}>г. Бишкек. Проспект Ч.Айтматова:4</p>
+                    <h3 className={`font-semibold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>{t('contact.address')}</h3>
+                    <p className={theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}>{t('contact.address.value')}</p>
                   </div>
                 </div>
 
@@ -168,11 +183,11 @@ export default function Contact() {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-blue-400" />
-                  <span>+996 (505) 147 052</span>
+                  <span>{t('+996 (555)111000')}</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-blue-400" />
-                  <span>admin@envio.kg</span>
+                  <span>{t('envio@gmail.com')}</span>
                 </div>
               </div>
             </div>

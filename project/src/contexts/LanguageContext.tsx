@@ -1,8 +1,8 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
 
 interface LanguageContextType {
-  language: 'ru' | 'en' | 'kg' | 'de';
-  setLanguage: (lang: 'ru' | 'en' | 'kg' | 'de') => void;
+  language: 'ru' | 'en' | 'kg' | 'de' | 'es';
+  setLanguage: (lang: 'ru' | 'en' | 'kg' | 'de' | 'es') => void;
   t: (key: string) => string;
 }
 
@@ -34,17 +34,36 @@ const translations = {
     'home.cta.courses': 'Посмотреть курсы',
     'home.cta.booking': 'Записаться',
     
-    // Courses
-    'courses.title': 'Наши Курсы',
+   // Courses
+   'courses.title': 'Наши Курсы',
     'courses.subtitle': 'Выберите курс для изучения',
     'courses.book': 'Записаться',
-    'courses.duration': 'Длительность',
-    'courses.level': 'Уровень',
-    'courses.price': 'Цена',
     'courses.weeks': 'недель',
-    'courses.beginner': 'Начинающий',
-    'courses.intermediate': 'Средний',
-    'courses.advanced': 'Продвинутый',
+
+    'courses.englishBeginning.title': 'Английский с нуля',
+    'courses.englishBeginning.description': 'Основы английского языка с нуля',
+    'courses.englishBeginning.level': 'Начинающий',
+
+    'courses.englishElementary.title': 'Английский Элементарный',
+    'courses.englishElementary.description': 'Базовое общение и простые фразы',
+    'courses.englishElementary.level': 'Элементарный',
+
+    'courses.englishPreIntermediate.title': 'Английский Пред-средний',
+    'courses.englishPreIntermediate.description': 'Уверенное понимание и разговор',
+    'courses.englishPreIntermediate.level': 'Пред-средний',
+
+    'courses.englishIntermediate.title': 'Английский Средний',
+    'courses.englishIntermediate.description': 'Разговорный английский для жизни и работы',
+    'courses.englishIntermediate.level': 'Средний',
+
+    'courses.englishUpperIntermediate.title': 'Английский Выше среднего',
+    'courses.englishUpperIntermediate.description': 'Английский для карьеры и обучения',
+    'courses.englishUpperIntermediate.level': 'Выше среднего',
+
+    'courses.englishAdvanced.title': 'Английский Продвинутый',
+    'courses.englishAdvanced.description': 'Свободный английский на продвинутом уровне',
+    'courses.englishAdvanced.level': 'Продвинутый',
+
     
     // Teachers
     'teachers.title': 'Наши Преподаватели',
@@ -58,13 +77,17 @@ const translations = {
     'contact.subtitle': 'Мы всегда готовы помочь',
     'contact.admin.subtitle': 'Для срочных вопросов и персональных консультаций',
     'contact.name': 'Имя',
-    'contact.email': 'Email',
+    'contact.email': 'Электронная почта',
     'contact.message': 'Сообщение',
     'contact.send': 'Отправить',
     'contact.info': 'Контактная информация',
     'contact.phone': 'Телефон',
     'contact.hours': 'Часы работы',
     'contact.hours.value': 'Пн-Пт: 9:00-18:00',
+    'contact.phone.value': '+996 (505)147052',
+    'contact.email.value': 'envio@gmail.com',
+    'contact.address': 'Адрес',
+    'contact.address.value': 'г. Бишкек. Проспект Ч.Айтматова:4',
     
     // Booking
     'booking.title': 'Запись на Консультацию',
@@ -96,6 +119,8 @@ const translations = {
     'pricing.premium': 'Премиум',
     'pricing.premium.price': '₽25,000',
     'pricing.premium.duration': '12 недель + поддержка',
+
+
   },
   en: {
     // Navigation
@@ -126,13 +151,31 @@ const translations = {
     'courses.title': 'Our Courses',
     'courses.subtitle': 'Choose a course to study',
     'courses.book': 'Book Now',
-    'courses.duration': 'Duration',
-    'courses.level': 'Level',
-    'courses.price': 'Price',
     'courses.weeks': 'weeks',
-    'courses.beginner': 'Beginner',
-    'courses.intermediate': 'Intermediate',
-    'courses.advanced': 'Advanced',
+
+    'courses.englishBeginning.title': 'English Beginning',
+    'courses.englishBeginning.description': 'Basics of English from zero',
+    'courses.englishBeginning.level': 'Beginner',
+
+    'courses.englishElementary.title': 'English Elementary',
+    'courses.englishElementary.description': 'Basic communication and simple phrases',
+    'courses.englishElementary.level': 'Elementary',
+
+    'courses.englishPreIntermediate.title': 'English Pre-Intermediate',
+    'courses.englishPreIntermediate.description': 'Confident understanding and speaking',
+    'courses.englishPreIntermediate.level': 'Pre-Intermediate',
+
+    'courses.englishIntermediate.title': 'English Intermediate',
+    'courses.englishIntermediate.description': 'Conversational English for life and work',
+    'courses.englishIntermediate.level': 'Intermediate',
+
+    'courses.englishUpperIntermediate.title': 'English Upper-Intermediate',
+    'courses.englishUpperIntermediate.description': 'English for career and studies',
+    'courses.englishUpperIntermediate.level': 'Upper-Intermediate',
+
+    'courses.englishAdvanced.title': 'English Advanced',
+    'courses.englishAdvanced.description': 'Fluent advanced English',
+    'courses.englishAdvanced.level': 'Advanced',
     
     // Teachers
     'teachers.title': 'Our Teachers',
@@ -153,7 +196,11 @@ const translations = {
     'contact.phone': 'Phone',
     'contact.hours': 'Working Hours',
     'contact.hours.value': 'Mon-Sat: 8:00-22:00',
-    
+    'contact.phone.value': '+996 (505)147052',
+    'contact.email.value': 'envio@gmail.com',
+    'contact.address': 'Address',
+    'contact.address.value': 'C. Bishkek. Avenue CH.Aitmatova:4',
+
     // Booking
     'booking.title': 'Book a Consultation',
     'booking.subtitle': 'Choose convenient time',
@@ -213,14 +260,32 @@ const translations = {
     // Courses
     'courses.title': 'Биздин курстар',
     'courses.subtitle': 'Окуу үчүн курсту тандаңыз',
-    'courses.book': 'Азыр жазылуу',
-    'courses.duration': 'Узактыгы',
-    'courses.level': 'Деңгээли',
-    'courses.price': 'Баасы',
+    'courses.book': 'Жазылуу',
     'courses.weeks': 'жума',
-    'courses.beginner': 'Башталгыч',
-    'courses.intermediate': 'Орто деңгээл',
-    'courses.advanced': 'Жогорку деңгээл',
+
+    'courses.englishBeginning.title': 'Англис тили Башталгыч',
+    'courses.englishBeginning.description': 'Англис тилин нөлдөн баштап үйрөнүү',
+    'courses.englishBeginning.level': 'Башталгыч',
+
+    'courses.englishElementary.title': 'Англис тили Элементардык',
+    'courses.englishElementary.description': 'Негизги баарлашуу жана жөнөкөй сөздөр',
+    'courses.englishElementary.level': 'Элементардык',
+
+    'courses.englishPreIntermediate.title': 'Англис тили Ортодон Мурунку',
+    'courses.englishPreIntermediate.description': 'Ишенимдүү түшүнүү жана баарлашуу',
+    'courses.englishPreIntermediate.level': 'Ортодон Мурунку',
+
+    'courses.englishIntermediate.title': 'Англис тили Орто',
+    'courses.englishIntermediate.description': 'Жашоо жана жумуш үчүн сүйлөөчү англис тили',
+    'courses.englishIntermediate.level': 'Орто',
+
+    'courses.englishUpperIntermediate.title': 'Англис тили Жогорку Орто',
+    'courses.englishUpperIntermediate.description': 'Карьера жана окуу үчүн англис тили',
+    'courses.englishUpperIntermediate.level': 'Жогорку Орто',
+
+    'courses.englishAdvanced.title': 'Англис тили Aлдыңкы',
+    'courses.englishAdvanced.description': 'Жогорку деңгээлде эркин англис тили',
+    'courses.englishAdvanced.level': 'Aлдыңкы',
 
     // Teachers
     'teachers.title': 'Биздин мугалимдер',
@@ -234,13 +299,17 @@ const translations = {
     'contact.subtitle': 'Биз сизге ар дайым жардам берүүгө даярбыз',
     'contact.admin.subtitle': 'Ургалуу суроолор жана жеке консультациялар үчүн',
     'contact.name': 'Аты-жөнү',
-    'contact.email': 'Электрондук почта',
     'contact.message': 'Билдирүү',
     'contact.send': 'Жөнөтүү',
     'contact.info': 'Байланыш маалыматтары',
+    'contact.email': 'Электрондук почта',
     'contact.phone': 'Телефон',
     'contact.hours': 'Иш убактысы',
     'contact.hours.value': 'Дш–Иш: 8:00–22:00',
+    'contact.phone.value': '+996 (505)147052',
+    'contact.email.value': 'envio@gmail.com',
+    'contact.address': 'Дарек',
+    'contact.address.value': 'Шаары. Бишкек. аллея Ч.Айтматова:4',
 
     // Booking
     'booking.title': 'Консультацияга жазылуу',
@@ -299,16 +368,34 @@ de: {
   'home.cta.booking': 'Jetzt buchen',
 
   // Courses
-  'courses.title': 'Unsere Kurse',
-  'courses.subtitle': 'Wählen Sie einen Kurs zum Lernen',
-  'courses.book': 'Jetzt buchen',
-  'courses.duration': 'Dauer',
-  'courses.level': 'Niveau',
-  'courses.price': 'Preis',
-  'courses.weeks': 'Wochen',
-  'courses.beginner': 'Anfänger',
-  'courses.intermediate': 'Mittelstufe',
-  'courses.advanced': 'Fortgeschritten',
+   'courses.title': 'Unsere Kurse',
+    'courses.subtitle': 'Wählen Sie einen Kurs zum Lernen',
+    'courses.book': 'Buchen',
+    'courses.weeks': 'Wochen',
+
+    'courses.englishBeginning.title': 'Englisch Anfänger',
+    'courses.englishBeginning.description': 'Grundlagen des Englischen von null',
+    'courses.englishBeginning.level': 'Anfänger',
+
+    'courses.englishElementary.title': 'Englisch Elementar',
+    'courses.englishElementary.description': 'Grundkommunikation und einfache Sätze',
+    'courses.englishElementary.level': 'Elementar',
+
+    'courses.englishPreIntermediate.title': 'Englisch Vorstufe',
+    'courses.englishPreIntermediate.description': 'Sicheres Verständnis und Sprechen',
+    'courses.englishPreIntermediate.level': 'Vorstufe',
+
+    'courses.englishIntermediate.title': 'Englisch Mittelstufe',
+    'courses.englishIntermediate.description': 'Konversationsenglisch für Leben und Arbeit',
+    'courses.englishIntermediate.level': 'Mittelstufe',
+
+    'courses.englishUpperIntermediate.title': 'Englisch Oberes Mittelstufe',
+    'courses.englishUpperIntermediate.description': 'Englisch für Karriere und Studium',
+    'courses.englishUpperIntermediate.level': 'Oberes Mittelstufe',
+
+    'courses.englishAdvanced.title': 'Englisch Fortgeschritten',
+    'courses.englishAdvanced.description': 'Fließendes Englisch auf fortgeschrittenem Niveau',
+    'courses.englishAdvanced.level': 'Fortgeschritten',
 
   // Teachers
   'teachers.title': 'Unsere Lehrer',
@@ -329,6 +416,10 @@ de: {
   'contact.phone': 'Telefon',
   'contact.hours': 'Arbeitszeiten',
   'contact.hours.value': 'Mo–Fr: 8:00–22:00',
+  'contact.phone.value': '+996 (505)147052',
+  'contact.email.value': 'envio@gmail.com',
+  'contact.address': 'Adresse',
+  'contact.address.value': 'S. Bischkek. Avenue Ch. Aitmatov:4',
 
   // Booking
   'booking.title': 'Beratung buchen',
@@ -360,11 +451,123 @@ de: {
   'pricing.premium': 'Premium',
   'pricing.premium.price': '350 $',
   'pricing.premium.duration': '12 Wochen + Support',
+},
+es: {
+    // Navigation
+    'nav.home': 'Inicio',
+    'nav.courses': 'Cursos',
+    'nav.teachers': 'Profesores',
+    'nav.contact': 'Contacto',
+    'nav.booking': 'Reserva',
+    
+    // Home Page
+    'home.title': 'Consultas y Cursos Profesionales',
+    'home.subtitle': 'Aprende nuevas habilidades con los mejores profesores',
+    'home.description': 'Nuestra plataforma ofrece consultas personalizadas y cursos de especialistas experimentados. Comienza tu camino hacia el crecimiento profesional hoy.',
+    'home.cta': 'Reservar una consulta',
+    'home.features.title': 'Por qué elegirnos',
+    'home.features.expert': 'Profesores expertos',
+    'home.features.expert.desc': 'Nuestros profesores tienen años de experiencia',
+    'home.features.flexible': 'Horario flexible',
+    'home.features.flexible.desc': 'Elige el tiempo conveniente para las clases',
+    'home.features.quality': 'Educación de calidad',
+    'home.features.quality.desc': 'Métodos y enfoques modernos',
+    'home.features.question.desc': '¿Listo para empezar a aprender?',
+    'home.cta.subtitle': 'Únete a cientos de estudiantes que ya han cambiado sus carreras',
+    'home.cta.courses': 'Ver Cursos',
+    'home.cta.booking': 'Reservar Ahora',
+    
+    // Courses
+    'courses.title': 'Nuestros Cursos',
+    'courses.subtitle': 'Elige un curso para estudiar',
+    'courses.book': 'Reservar',
+    'courses.weeks': 'semanas',
+
+    'courses.englishBeginning.title': 'Inglés Principiante',
+    'courses.englishBeginning.description': 'Inglés desde cero',
+    'courses.englishBeginning.level': 'Principiante',
+
+    'courses.englishElementary.title': 'Inglés Elemental',
+    'courses.englishElementary.description': 'Comunicación básica y frases simples',
+    'courses.englishElementary.level': 'Elemental',
+
+    'courses.englishPreIntermediate.title': 'Inglés Pre-Intermedio',
+    'courses.englishPreIntermediate.description': 'Comprensión y conversación segura',
+    'courses.englishPreIntermediate.level': 'Pre-Intermedio',
+
+    'courses.englishIntermediate.title': 'Inglés Intermedio',
+    'courses.englishIntermediate.description': 'Inglés conversacional para la vida y el trabajo',
+    'courses.englishIntermediate.level': 'Intermedio',
+
+    'courses.englishUpperIntermediate.title': 'Inglés Intermedio Alto',
+    'courses.englishUpperIntermediate.description': 'Inglés para carrera y estudios',
+    'courses.englishUpperIntermediate.level': 'Intermedio Alto',
+
+    'courses.englishAdvanced.title': 'Inglés Avanzado',
+    'courses.englishAdvanced.description': 'Inglés fluido a nivel avanzado',
+    'courses.englishAdvanced.level': 'Avanzado',
+
+    
+    // Teachers
+    'teachers.title': 'Nuestros Profesores',
+    'teachers.subtitle': 'Conoce a nuestro equipo de expertos',
+    'teachers.experience': 'Experiencia',
+    'teachers.years': 'años',
+    'teachers.book': 'Reservar con profesor',
+    
+    // Contact
+    'contact.title': 'Contactar Administrador',
+    'contact.subtitle': 'Siempre estamos listos para ayudar',
+    'contact.admin.subtitle': 'Para preguntas urgentes y consultas personales',
+    'contact.name': 'Nombre',
+    'contact.email': 'Correo Electrónico',
+    'contact.message': 'Mensaje',
+    'contact.send': 'Enviar',
+    'contact.info': 'Información de Contacto',
+    'contact.phone': 'Teléfono',
+    'contact.hours': 'Horario de Trabajo',
+    'contact.hours.value': 'Lun-Sab: 8:00-22:00',
+    'contact.phone.value': '+996 (505)147052',
+    'contact.email.value': 'envio@gmail.com',
+    'contact.address': 'Dirección',
+    'contact.address.value': 'G. Biskek. Avenida Ch. Aitmatov:4',
+
+    // Booking
+    'booking.title': 'Reservar una Consulta',
+    'booking.subtitle': 'Elige el tiempo conveniente',
+    'booking.course': 'Curso',
+    'booking.teacher': 'Profesor',
+    'booking.date': 'Fecha',
+    'booking.time': 'Hora',
+    'booking.submit': 'Reservar',
+    'booking.select.course': 'Seleccionar curso',
+    'booking.select.teacher': 'Seleccionar profesor',
+    
+    // Footer
+    'footer.about': 'Acerca de Nosotros',
+    'footer.about.text': 'Proporcionamos educación de calidad y consultas para el crecimiento profesional.',
+    'footer.contact': 'Contacto',
+    'footer.courses': 'Cursos',
+    'footer.teachers': 'Profesores',
+    'footer.rights': 'Todos los derechos reservados',
+    
+    // Pricing
+    'pricing.title': 'Precios',
+    'pricing.consultation': 'Consulta',
+    'pricing.consultation.price': '$35',
+    'pricing.consultation.duration': '60 minutos',
+    'pricing.course': 'Curso Completo',
+    'pricing.course.price': '$200',
+    'pricing.course.duration': '8 semanas',
+    'pricing.premium': 'Premium',
+    'pricing.premium.price': '$350',
+    'pricing.premium.duration': '12 semanas + soporte',
 }
 };
 
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<'ru' | 'en' | 'kg' | 'de'>('ru');
+  const [language, setLanguage] = useState<'ru' | 'en' | 'kg' | 'de' | 'es'>('ru');
 
   const t = (key: string): string => {
     return (translations[language] as Record<string, string>)[key] || key;

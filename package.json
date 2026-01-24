@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@vercel/node": "^5.5.27",
+    "nodemailer": "^7.0.12"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^7.0.5"
+  }
+}
