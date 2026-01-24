@@ -25,18 +25,19 @@ export default function Navbar() {
     <nav className={`${theme === 'dark' ? 'bg-gray-900/95 text-white' : 'bg-white/95'} backdrop-blur-md shadow-lg sticky top-0 z-50 transition-colors`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <img 
-              src="/src/assets/envio.png" 
-              alt="Envio Logo" 
-              className="w-8 h-8"
-            />
-            <span className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-              Envio
-            </span>
-          </Link>
+         {/* Logo */}
+        <Link to="/" className="flex items-center space-x-2">
+          <img 
+            src="/images/envio.png"  // путь из public
+            alt="Envio Logo" 
+            className="w-12 h-12 object-contain"
+          />
+          <span className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+            Envio
+          </span>
+        </Link>
 
+        
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
             {navItems.map((item) => (
