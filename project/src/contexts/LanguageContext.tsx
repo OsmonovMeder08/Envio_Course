@@ -16,7 +16,7 @@ const translations = {
     'nav.teachers': 'Преподаватели',
     'nav.contact': 'Контакты',
     'nav.booking': 'Запись',
-    
+
     // Home Page
     'home.title': 'Профессиональные курсы Английского языка',
     'home.subtitle': 'Изучайте новые навыки с лучшими преподавателями',
@@ -33,9 +33,9 @@ const translations = {
     'home.cta.subtitle': 'Присоединяйтесь к сотням студентам, которые уже изменили свою карьеру',
     'home.cta.courses': 'Посмотреть курсы',
     'home.cta.booking': 'Записаться',
-    
-   // Courses
-   'courses.title': 'Наши Курсы',
+
+    // Courses
+    'courses.title': 'Наши Курсы',
     'courses.subtitle': 'Выберите курс для изучения',
     'courses.book': 'Записаться',
     'courses.weeks': 'недель',
@@ -43,35 +43,62 @@ const translations = {
     'courses.englishBeginning.title': 'Английский с нуля',
     'courses.englishBeginning.description': 'Основы английского языка с нуля',
     'courses.englishBeginning.level': 'Начинающий',
+    'courses.englishBeginning.price': '₽2 500',
 
     'courses.englishElementary.title': 'Английский Элементарный',
     'courses.englishElementary.description': 'Базовое общение и простые фразы',
     'courses.englishElementary.level': 'Элементарный',
+    'courses.englishElementary.price': '₽2 900',
 
     'courses.englishPreIntermediate.title': 'Английский Пред-средний',
     'courses.englishPreIntermediate.description': 'Уверенное понимание и разговор',
     'courses.englishPreIntermediate.level': 'Пред-средний',
+    'courses.englishPreIntermediate.price': '₽3 200',
 
     'courses.englishIntermediate.title': 'Английский Средний',
     'courses.englishIntermediate.description': 'Разговорный английский для жизни и работы',
     'courses.englishIntermediate.level': 'Средний',
+    'courses.englishIntermediate.price': '₽3 800',
 
     'courses.englishUpperIntermediate.title': 'Английский Выше среднего',
     'courses.englishUpperIntermediate.description': 'Английский для карьеры и обучения',
     'courses.englishUpperIntermediate.level': 'Выше среднего',
+    'courses.englishUpperIntermediate.price': '₽4 200',
 
     'courses.englishAdvanced.title': 'Английский Продвинутый',
     'courses.englishAdvanced.description': 'Свободный английский на продвинутом уровне',
     'courses.englishAdvanced.level': 'Продвинутый',
+    'courses.englishAdvanced.price': '₽4 800',
 
-    
+
     // Teachers
-    'teachers.title': 'Наши Преподаватели',
+    'teachers.title': 'Наши преподаватели',
     'teachers.subtitle': 'Познакомьтесь с нашей командой экспертов',
-    'teachers.experience': 'Опыт работы',
+
+    'teachers.experience': 'Опыт',
     'teachers.years': 'лет',
+
+    'teachers.specialty': 'Специализация',
+    'teachers.description': '',
+    'teachers.languages': 'Языки',
+    'teachers.level': 'Уровень',
+    'teachers.rating': 'Рейтинг',
+    'teachers.reviews': 'отзывов',
+
+    'teachers.about': 'О преподавателе',
+    'teachers.education': 'Образование',
+    'teachers.courses': 'Курсы',
+
     'teachers.book': 'Записаться к преподавателю',
-    
+    'teachers.bookLesson': 'Записаться на урок',
+    'teachers.viewProfile': 'Посмотреть профиль',
+    'teachers.contact': 'Связаться с преподавателем',
+
+    'teachers.noTeachers': 'Преподаватели не найдены',
+    'teachers.search': 'Поиск преподавателя',
+    'teachers.filter': 'Фильтр',
+
+
     // Contact
     'contact.title': 'Связаться с Администратором',
     'contact.subtitle': 'Мы всегда готовы помочь',
@@ -88,7 +115,7 @@ const translations = {
     'contact.email.value': 'envio@gmail.com',
     'contact.address': 'Адрес',
     'contact.address.value': 'г. Бишкек. Проспект Ч.Айтматова:4',
-    
+
     // Booking
     'booking.title': 'Запись на Консультацию',
     'booking.subtitle': 'Выберите удобное время',
@@ -99,22 +126,22 @@ const translations = {
     'booking.submit': 'Записаться',
     'booking.select.course': 'Выберите курс',
     'booking.select.teacher': 'Выберите преподавателя',
-    
+
     // Footer
     'footer.about': 'О нас',
-    'footer.about.text': 'Мы предоставляем качественное образование и консультации для профессионального роста.',
+    'footer.about.text': 'Мы обучаем качественному английскому языку для профессионального роста и глобальных возможностей. С нами английский – это не просто язык, это новое будущее.',
     'footer.contact': 'Контакты',
     'footer.courses': 'Курсы',
     'footer.teachers': 'Преподаватели',
     'footer.rights': 'Все права защищены',
-    
+
     // Pricing
     'pricing.title': 'Цены',
     'pricing.consultation': 'Консультация',
-    'pricing.consultation.price': '₽2,500',
+    'pricing.consultation.price': '₽3,000',
     'pricing.consultation.duration': '60 минут',
     'pricing.course': 'Полный курс',
-    'pricing.course.price': '₽15,000',
+    'pricing.course.price': '₽20,000',
     'pricing.course.duration': '8 недель',
     'pricing.premium': 'Премиум',
     'pricing.premium.price': '₽25,000',
@@ -129,7 +156,7 @@ const translations = {
     'nav.teachers': 'Teachers',
     'nav.contact': 'Contact',
     'nav.booking': 'Booking',
-    
+
     // Home Page
     'home.title': 'Professional Consultations and Courses',
     'home.subtitle': 'Learn new skills with the best teachers',
@@ -146,7 +173,7 @@ const translations = {
     'home.cta.subtitle': 'Join hundreds of students who have already changed their careers',
     'home.cta.courses': 'View Courses',
     'home.cta.booking': 'Book Now',
-    
+
     // Courses
     'courses.title': 'Our Courses',
     'courses.subtitle': 'Choose a course to study',
@@ -156,34 +183,60 @@ const translations = {
     'courses.englishBeginning.title': 'English Beginning',
     'courses.englishBeginning.description': 'Basics of English from zero',
     'courses.englishBeginning.level': 'Beginner',
+    'courses.englishBeginning.price': '$29',
 
     'courses.englishElementary.title': 'English Elementary',
     'courses.englishElementary.description': 'Basic communication and simple phrases',
     'courses.englishElementary.level': 'Elementary',
+    'courses.englishElementary.price': '$34',
 
     'courses.englishPreIntermediate.title': 'English Pre-Intermediate',
     'courses.englishPreIntermediate.description': 'Confident understanding and speaking',
     'courses.englishPreIntermediate.level': 'Pre-Intermediate',
+    'courses.englishPreIntermediate.price': '$38',
 
     'courses.englishIntermediate.title': 'English Intermediate',
     'courses.englishIntermediate.description': 'Conversational English for life and work',
     'courses.englishIntermediate.level': 'Intermediate',
+    'courses.englishIntermediate.price': '$45',
 
     'courses.englishUpperIntermediate.title': 'English Upper-Intermediate',
     'courses.englishUpperIntermediate.description': 'English for career and studies',
     'courses.englishUpperIntermediate.level': 'Upper-Intermediate',
+    'courses.englishUpperIntermediate.price': '$49',
 
     'courses.englishAdvanced.title': 'English Advanced',
     'courses.englishAdvanced.description': 'Fluent advanced English',
     'courses.englishAdvanced.level': 'Advanced',
-    
+    'courses.englishAdvanced.price': '$55',
+
+
     // Teachers
     'teachers.title': 'Our Teachers',
     'teachers.subtitle': 'Meet our team of experts',
+
     'teachers.experience': 'Experience',
     'teachers.years': 'years',
+
+    'teachers.specialty': 'Specialty',
+    'teachers.languages': 'Languages',
+    'teachers.level': 'Level',
+    'teachers.rating': 'Rating',
+    'teachers.reviews': 'reviews',
+    'teachers.about': 'About the teacher',
+    'teachers.education': 'Education',
+    'teachers.courses': 'Courses',
+
     'teachers.book': 'Book with teacher',
-    
+    'teachers.bookLesson': 'Book a lesson',
+    'teachers.viewProfile': 'View profile',
+    'teachers.contact': 'Contact teacher',
+
+    'teachers.noTeachers': 'No teachers found',
+    'teachers.search': 'Search teacher',
+    'teachers.filter': 'Filter',
+
+
     // Contact
     'contact.title': 'Contact Administrator',
     'contact.subtitle': 'We are always ready to help',
@@ -211,25 +264,25 @@ const translations = {
     'booking.submit': 'Book',
     'booking.select.course': 'Select course',
     'booking.select.teacher': 'Select teacher',
-    
+
     // Footer
     'footer.about': 'About Us',
-    'footer.about.text': 'We provide quality education and consultations for professional growth.',
+    'footer.about.text': 'We teach quality English for professional growth and global opportunities. With us, English is not just a language, it is a new future.',
     'footer.contact': 'Contact',
     'footer.courses': 'Courses',
     'footer.teachers': 'Teachers',
     'footer.rights': 'All rights reserved',
-    
+
     // Pricing
     'pricing.title': 'Pricing',
     'pricing.consultation': 'Consultation',
     'pricing.consultation.price': '$35',
     'pricing.consultation.duration': '60 minutes',
     'pricing.course': 'Full Course',
-    'pricing.course.price': '$200',
+    'pricing.course.price': '$228',
     'pricing.course.duration': '8 weeks',
     'pricing.premium': 'Premium',
-    'pricing.premium.price': '$350',
+    'pricing.premium.price': '$285',
     'pricing.premium.duration': '12 weeks + support',
   },
   kg: {
@@ -266,33 +319,60 @@ const translations = {
     'courses.englishBeginning.title': 'Англис тили Башталгыч',
     'courses.englishBeginning.description': 'Англис тилин нөлдөн баштап үйрөнүү',
     'courses.englishBeginning.level': 'Башталгыч',
+    'courses.englishBeginning.price': '3 500 сом',
 
     'courses.englishElementary.title': 'Англис тили Элементардык',
     'courses.englishElementary.description': 'Негизги баарлашуу жана жөнөкөй сөздөр',
     'courses.englishElementary.level': 'Элементардык',
+    'courses.englishElementary.price': '4 000 сом',
 
     'courses.englishPreIntermediate.title': 'Англис тили Ортодон Мурунку',
     'courses.englishPreIntermediate.description': 'Ишенимдүү түшүнүү жана баарлашуу',
     'courses.englishPreIntermediate.level': 'Ортодон Мурунку',
+    'courses.englishPreIntermediate.price': '4 500 сом',
 
     'courses.englishIntermediate.title': 'Англис тили Орто',
     'courses.englishIntermediate.description': 'Жашоо жана жумуш үчүн сүйлөөчү англис тили',
     'courses.englishIntermediate.level': 'Орто',
+    'courses.englishIntermediate.price': '5 000 сом',
 
     'courses.englishUpperIntermediate.title': 'Англис тили Жогорку Орто',
     'courses.englishUpperIntermediate.description': 'Карьера жана окуу үчүн англис тили',
     'courses.englishUpperIntermediate.level': 'Жогорку Орто',
+    'courses.englishUpperIntermediate.price': '5 500 сом',
 
-    'courses.englishAdvanced.title': 'Англис тили Aлдыңкы',
+    'courses.englishAdvanced.title': 'Англис тили Алдыңкы',
     'courses.englishAdvanced.description': 'Жогорку деңгээлде эркин англис тили',
-    'courses.englishAdvanced.level': 'Aлдыңкы',
+    'courses.englishAdvanced.level': 'Алдыңкы',
+    'courses.englishAdvanced.price': '6 000 сом',
+
 
     // Teachers
     'teachers.title': 'Биздин мугалимдер',
-    'teachers.subtitle': 'Кесипкөй командабыз менен таанышыңыз',
+    'teachers.subtitle': 'Кесипкөй адистерибиз менен таанышыңыз',
+
     'teachers.experience': 'Тажрыйба',
     'teachers.years': 'жыл',
+
+    'teachers.specialty': 'Адистиги',
+    'teachers.languages': 'Тилдер',
+    'teachers.level': 'Деңгээли',
+    'teachers.rating': 'Рейтинг',
+    'teachers.reviews': 'сын-пикир',
+
+    'teachers.about': 'Мугалим жөнүндө',
+    'teachers.education': 'Билими',
+    'teachers.courses': 'Курстар',
+
     'teachers.book': 'Мугалимге жазылуу',
+    'teachers.bookLesson': 'Сабакка жазылуу',
+    'teachers.viewProfile': 'Профилди көрүү',
+    'teachers.contact': 'Байланышуу',
+
+    'teachers.noTeachers': 'Мугалимдер табылган жок',
+    'teachers.search': 'Мугалим издөө',
+    'teachers.filter': 'Фильтр',
+
 
     // Contact
     'contact.title': 'Администратор менен байланыш',
@@ -324,7 +404,7 @@ const translations = {
 
     // Footer
     'footer.about': 'Биз жөнүндө',
-    'footer.about.text': 'Биз кесиптик өсүү үчүн сапаттуу билим жана консультацияларды сунуштайбыз.',
+    'footer.about.text': 'Биз кесиптик өсүү жана глобалдык мүмкүнчүлүктөр үчүн сапаттуу англис тилин үйрөтөбүз. Биз менен англис тили — жөн гана тил эмес, жаңы келечек.',
     'footer.contact': 'Байланыш',
     'footer.courses': 'Курстар',
     'footer.teachers': 'Мугалимдер',
@@ -333,42 +413,42 @@ const translations = {
     // Pricing
     'pricing.title': 'Баалар',
     'pricing.consultation': 'Консультация',
-    'pricing.consultation.price': '$35',
+    'pricing.consultation.price': '3.000 сом',
     'pricing.consultation.duration': '60 мүнөт',
     'pricing.course': 'Толук курс',
-    'pricing.course.price': '$200',
+    'pricing.course.price': '20.000 сом',
     'pricing.course.duration': '8 жума',
     'pricing.premium': 'Премиум',
-    'pricing.premium.price': '$350',
+    'pricing.premium.price': '25.000 сом',
     'pricing.premium.duration': '12 жума + колдоо',
   },
-de: {
-  // Navigation
-  'nav.home': 'Startseite',
-  'nav.courses': 'Kurse',
-  'nav.teachers': 'Lehrer',
-  'nav.contact': 'Kontakt',
-  'nav.booking': 'Buchung',
+  de: {
+    // Navigation
+    'nav.home': 'Startseite',
+    'nav.courses': 'Kurse',
+    'nav.teachers': 'Lehrer',
+    'nav.contact': 'Kontakt',
+    'nav.booking': 'Buchung',
 
-  // Home Page
-  'home.title': 'Professionelle Beratungen und Kurse',
-  'home.subtitle': 'Lernen Sie neue Fähigkeiten mit den besten Lehrern',
-  'home.description': 'Unsere Plattform bietet individuelle Beratungen und Kurse von erfahrenen Experten an. Beginnen Sie noch heute Ihren Weg zum beruflichen Erfolg.',
-  'home.cta': 'Beratung buchen',
-  'home.features.title': 'Warum uns wählen',
-  'home.features.expert': 'Professionelle Lehrer',
-  'home.features.expert.desc': 'Unsere Lehrer verfügen über langjährige Erfahrung',
-  'home.features.flexible': 'Flexibler Zeitplan',
-  'home.features.flexible.desc': 'Wählen Sie die für Sie passende Zeit',
-  'home.features.quality': 'Qualitativ hochwertige Bildung',
-  'home.features.quality.desc': 'Moderne Methoden und Ansätze',
-  'home.features.question.desc': 'Bereit, mit dem Lernen zu beginnen?',
-  'home.cta.subtitle': 'Schließen Sie sich Hunderten von Studierenden an, die bereits ihre Karriere verändert haben',
-  'home.cta.courses': 'Kurse anzeigen',
-  'home.cta.booking': 'Jetzt buchen',
+    // Home Page
+    'home.title': 'Professionelle Beratungen und Kurse',
+    'home.subtitle': 'Lernen Sie neue Fähigkeiten mit den besten Lehrern',
+    'home.description': 'Unsere Plattform bietet individuelle Beratungen und Kurse von erfahrenen Experten an. Beginnen Sie noch heute Ihren Weg zum beruflichen Erfolg.',
+    'home.cta': 'Beratung buchen',
+    'home.features.title': 'Warum uns wählen',
+    'home.features.expert': 'Professionelle Lehrer',
+    'home.features.expert.desc': 'Unsere Lehrer verfügen über langjährige Erfahrung',
+    'home.features.flexible': 'Flexibler Zeitplan',
+    'home.features.flexible.desc': 'Wählen Sie die für Sie passende Zeit',
+    'home.features.quality': 'Qualitativ hochwertige Bildung',
+    'home.features.quality.desc': 'Moderne Methoden und Ansätze',
+    'home.features.question.desc': 'Bereit, mit dem Lernen zu beginnen?',
+    'home.cta.subtitle': 'Schließen Sie sich Hunderten von Studierenden an, die bereits ihre Karriere verändert haben',
+    'home.cta.courses': 'Kurse anzeigen',
+    'home.cta.booking': 'Jetzt buchen',
 
-  // Courses
-   'courses.title': 'Unsere Kurse',
+    // Courses
+    'courses.title': 'Unsere Kurse',
     'courses.subtitle': 'Wählen Sie einen Kurs zum Lernen',
     'courses.book': 'Buchen',
     'courses.weeks': 'Wochen',
@@ -376,90 +456,117 @@ de: {
     'courses.englishBeginning.title': 'Englisch Anfänger',
     'courses.englishBeginning.description': 'Grundlagen des Englischen von null',
     'courses.englishBeginning.level': 'Anfänger',
+    'courses.englishBeginning.price': '€29',
 
     'courses.englishElementary.title': 'Englisch Elementar',
     'courses.englishElementary.description': 'Grundkommunikation und einfache Sätze',
     'courses.englishElementary.level': 'Elementar',
+    'courses.englishElementary.price': '€34',
 
     'courses.englishPreIntermediate.title': 'Englisch Vorstufe',
     'courses.englishPreIntermediate.description': 'Sicheres Verständnis und Sprechen',
     'courses.englishPreIntermediate.level': 'Vorstufe',
+    'courses.englishPreIntermediate.price': '€38',
 
     'courses.englishIntermediate.title': 'Englisch Mittelstufe',
     'courses.englishIntermediate.description': 'Konversationsenglisch für Leben und Arbeit',
     'courses.englishIntermediate.level': 'Mittelstufe',
+    'courses.englishIntermediate.price': '€45',
 
     'courses.englishUpperIntermediate.title': 'Englisch Oberes Mittelstufe',
     'courses.englishUpperIntermediate.description': 'Englisch für Karriere und Studium',
     'courses.englishUpperIntermediate.level': 'Oberes Mittelstufe',
+    'courses.englishUpperIntermediate.price': '€49',
 
     'courses.englishAdvanced.title': 'Englisch Fortgeschritten',
     'courses.englishAdvanced.description': 'Fließendes Englisch auf fortgeschrittenem Niveau',
     'courses.englishAdvanced.level': 'Fortgeschritten',
+    'courses.englishAdvanced.price': '€55',
 
-  // Teachers
-  'teachers.title': 'Unsere Lehrer',
-  'teachers.subtitle': 'Lernen Sie unser professionelles Team kennen',
-  'teachers.experience': 'Erfahrung',
-  'teachers.years': 'Jahre',
-  'teachers.book': 'Lehrer buchen',
 
-  // Contact
-  'contact.title': 'Kontakt mit dem Administrator',
-  'contact.subtitle': 'Wir sind immer bereit, Ihnen zu helfen',
-  'contact.admin.subtitle': 'Für dringende Fragen und persönliche Beratungen',
-  'contact.name': 'Vor- und Nachname',
-  'contact.email': 'E-Mail',
-  'contact.message': 'Nachricht',
-  'contact.send': 'Senden',
-  'contact.info': 'Kontaktinformationen',
-  'contact.phone': 'Telefon',
-  'contact.hours': 'Arbeitszeiten',
-  'contact.hours.value': 'Mo–Fr: 8:00–22:00',
-  'contact.phone.value': '+996 (505)147052',
-  'contact.email.value': 'envio@gmail.com',
-  'contact.address': 'Adresse',
-  'contact.address.value': 'S. Bischkek. Avenue Ch. Aitmatov:4',
+    // Teachers
+    'teachers.title': 'Unsere Lehrer',
+    'teachers.subtitle': 'Lernen Sie unser Expertenteam kennen',
 
-  // Booking
-  'booking.title': 'Beratung buchen',
-  'booking.subtitle': 'Wählen Sie eine passende Zeit',
-  'booking.course': 'Kurs',
-  'booking.teacher': 'Lehrer',
-  'booking.date': 'Datum',
-  'booking.time': 'Uhrzeit',
-  'booking.submit': 'Buchen',
-  'booking.select.course': 'Kurs auswählen',
-  'booking.select.teacher': 'Lehrer auswählen',
+    'teachers.experience': 'Erfahrung',
+    'teachers.years': 'Jahre',
 
-  // Footer
-  'footer.about': 'Über uns',
-  'footer.about.text': 'Wir bieten hochwertige Bildung und Beratungen für berufliches Wachstum an.',
-  'footer.contact': 'Kontakt',
-  'footer.courses': 'Kurse',
-  'footer.teachers': 'Lehrer',
-  'footer.rights': 'Alle Rechte vorbehalten',
+    'teachers.specialty': 'Fachgebiet',
+    'teachers.languages': 'Sprachen',
+    'teachers.level': 'Niveau',
+    'teachers.rating': 'Bewertung',
+    'teachers.reviews': 'Bewertungen',
 
-  // Pricing
-  'pricing.title': 'Preise',
-  'pricing.consultation': 'Beratung',
-  'pricing.consultation.price': '35 $',
-  'pricing.consultation.duration': '60 Minuten',
-  'pricing.course': 'Kompletter Kurs',
-  'pricing.course.price': '200 $',
-  'pricing.course.duration': '8 Wochen',
-  'pricing.premium': 'Premium',
-  'pricing.premium.price': '350 $',
-  'pricing.premium.duration': '12 Wochen + Support',
-},
-es: {
+    'teachers.about': 'Über den Lehrer',
+    'teachers.education': 'Ausbildung',
+    'teachers.courses': 'Kurse',
+
+    'teachers.book': 'Beim Lehrer buchen',
+    'teachers.bookLesson': 'Unterricht buchen',
+    'teachers.viewProfile': 'Profil ansehen',
+    'teachers.contact': 'Lehrer kontaktieren',
+
+    'teachers.noTeachers': 'Keine Lehrer gefunden',
+    'teachers.search': 'Lehrer suchen',
+    'teachers.filter': 'Filter',
+
+
+    // Contact
+    'contact.title': 'Kontakt mit dem Administrator',
+    'contact.subtitle': 'Wir sind immer bereit, Ihnen zu helfen',
+    'contact.admin.subtitle': 'Für dringende Fragen und persönliche Beratungen',
+    'contact.name': 'Vor- und Nachname',
+    'contact.email': 'E-Mail',
+    'contact.message': 'Nachricht',
+    'contact.send': 'Senden',
+    'contact.info': 'Kontaktinformationen',
+    'contact.phone': 'Telefon',
+    'contact.hours': 'Arbeitszeiten',
+    'contact.hours.value': 'Mo–Fr: 8:00–22:00',
+    'contact.phone.value': '+996 (505)147052',
+    'contact.email.value': 'envio@gmail.com',
+    'contact.address': 'Adresse',
+    'contact.address.value': 'S. Bischkek. Avenue Ch. Aitmatov:4',
+
+    // Booking
+    'booking.title': 'Beratung buchen',
+    'booking.subtitle': 'Wählen Sie eine passende Zeit',
+    'booking.course': 'Kurs',
+    'booking.teacher': 'Lehrer',
+    'booking.date': 'Datum',
+    'booking.time': 'Uhrzeit',
+    'booking.submit': 'Buchen',
+    'booking.select.course': 'Kurs auswählen',
+    'booking.select.teacher': 'Lehrer auswählen',
+
+    // Footer
+    'footer.about': 'Über uns',
+    'footer.about.text': 'Wir unterrichten hochwertiges Englisch für berufliche Weiterentwicklung und globale Chancen. Bei uns ist Englisch nicht nur eine Sprache, sondern eine neue Zukunft.',
+    'footer.contact': 'Kontakt',
+    'footer.courses': 'Kurse',
+    'footer.teachers': 'Lehrer',
+    'footer.rights': 'Alle Rechte vorbehalten',
+
+    // Pricing
+    'pricing.title': 'Preise',
+    'pricing.consultation': 'Beratung',
+    'pricing.consultation.price': '30 €',
+    'pricing.consultation.duration': '60 Minuten',
+    'pricing.course': 'Kompletter Kurs',
+    'pricing.course.price': '195 €',
+    'pricing.course.duration': '8 Wochen',
+    'pricing.premium': 'Premium',
+    'pricing.premium.price': '245 €',
+    'pricing.premium.duration': '12 Wochen + Support',
+  },
+  es: {
     // Navigation
     'nav.home': 'Inicio',
     'nav.courses': 'Cursos',
     'nav.teachers': 'Profesores',
     'nav.contact': 'Contacto',
     'nav.booking': 'Reserva',
-    
+
     // Home Page
     'home.title': 'Consultas y Cursos Profesionales',
     'home.subtitle': 'Aprende nuevas habilidades con los mejores profesores',
@@ -476,7 +583,7 @@ es: {
     'home.cta.subtitle': 'Únete a cientos de estudiantes que ya han cambiado sus carreras',
     'home.cta.courses': 'Ver Cursos',
     'home.cta.booking': 'Reservar Ahora',
-    
+
     // Courses
     'courses.title': 'Nuestros Cursos',
     'courses.subtitle': 'Elige un curso para estudiar',
@@ -486,35 +593,61 @@ es: {
     'courses.englishBeginning.title': 'Inglés Principiante',
     'courses.englishBeginning.description': 'Inglés desde cero',
     'courses.englishBeginning.level': 'Principiante',
+    'courses.englishBeginning.price': '€29',
 
     'courses.englishElementary.title': 'Inglés Elemental',
     'courses.englishElementary.description': 'Comunicación básica y frases simples',
     'courses.englishElementary.level': 'Elemental',
+    'courses.englishElementary.price': '€34',
 
     'courses.englishPreIntermediate.title': 'Inglés Pre-Intermedio',
     'courses.englishPreIntermediate.description': 'Comprensión y conversación segura',
     'courses.englishPreIntermediate.level': 'Pre-Intermedio',
+    'courses.englishPreIntermediate.price': '€38',
 
     'courses.englishIntermediate.title': 'Inglés Intermedio',
     'courses.englishIntermediate.description': 'Inglés conversacional para la vida y el trabajo',
     'courses.englishIntermediate.level': 'Intermedio',
+    'courses.englishIntermediate.price': '€45',
 
     'courses.englishUpperIntermediate.title': 'Inglés Intermedio Alto',
     'courses.englishUpperIntermediate.description': 'Inglés para carrera y estudios',
     'courses.englishUpperIntermediate.level': 'Intermedio Alto',
+    'courses.englishUpperIntermediate.price': '€49',
 
     'courses.englishAdvanced.title': 'Inglés Avanzado',
     'courses.englishAdvanced.description': 'Inglés fluido a nivel avanzado',
     'courses.englishAdvanced.level': 'Avanzado',
+    'courses.englishAdvanced.price': '€55',
 
-    
+
     // Teachers
-    'teachers.title': 'Nuestros Profesores',
+    'teachers.title': 'Nuestros profesores',
     'teachers.subtitle': 'Conoce a nuestro equipo de expertos',
+
     'teachers.experience': 'Experiencia',
     'teachers.years': 'años',
-    'teachers.book': 'Reservar con profesor',
-    
+
+    'teachers.specialty': 'Especialidad',
+    'teachers.languages': 'Idiomas',
+    'teachers.level': 'Nivel',
+    'teachers.rating': 'Calificación',
+    'teachers.reviews': 'reseñas',
+
+    'teachers.about': 'Sobre el profesor',
+    'teachers.education': 'Educación',
+    'teachers.courses': 'Cursos',
+
+    'teachers.book': 'Reservar con el profesor',
+    'teachers.bookLesson': 'Reservar una clase',
+    'teachers.viewProfile': 'Ver perfil',
+    'teachers.contact': 'Contactar al profesor',
+
+    'teachers.noTeachers': 'No se encontraron profesores',
+    'teachers.search': 'Buscar profesor',
+    'teachers.filter': 'Filtro',
+
+
     // Contact
     'contact.title': 'Contactar Administrador',
     'contact.subtitle': 'Siempre estamos listos para ayudar',
@@ -542,32 +675,32 @@ es: {
     'booking.submit': 'Reservar',
     'booking.select.course': 'Seleccionar curso',
     'booking.select.teacher': 'Seleccionar profesor',
-    
+
     // Footer
     'footer.about': 'Acerca de Nosotros',
-    'footer.about.text': 'Proporcionamos educación de calidad y consultas para el crecimiento profesional.',
+    'footer.about.text': 'Enseñamos inglés de calidad para el crecimiento profesional y oportunidades globales. Con nosotros, el inglés no es solo un idioma, es un nuevo futuro.',
     'footer.contact': 'Contacto',
     'footer.courses': 'Cursos',
     'footer.teachers': 'Profesores',
     'footer.rights': 'Todos los derechos reservados',
-    
+
     // Pricing
     'pricing.title': 'Precios',
     'pricing.consultation': 'Consulta',
-    'pricing.consultation.price': '$35',
+    'pricing.consultation.price': '€30',
     'pricing.consultation.duration': '60 minutos',
     'pricing.course': 'Curso Completo',
-    'pricing.course.price': '$200',
+    'pricing.course.price': '€195',
     'pricing.course.duration': '8 semanas',
     'pricing.premium': 'Premium',
-    'pricing.premium.price': '$350',
+    'pricing.premium.price': '€245',
     'pricing.premium.duration': '12 semanas + soporte',
-}
+  }
 };
 
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<'ru' | 'en' | 'kg' | 'de' | 'es'>('ru');
+  const [language, setLanguage] = useState<'en' | 'kg' | 'ru' | 'de' | 'es'>('en');
 
   const t = (key: string): string => {
     return (translations[language] as Record<string, string>)[key] || key;

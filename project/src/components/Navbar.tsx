@@ -25,39 +25,40 @@ export default function Navbar() {
     <nav className={`${theme === 'dark' ? 'bg-gray-900/95 text-white' : 'bg-white/95'} backdrop-blur-md shadow-lg sticky top-0 z-50 transition-colors`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2">
-          <img 
-            src="/images/envio.png"  // путь из public
-            alt="Envio Logo" 
-            className="w-12 h-12 object-contain"
-          />
-          <span className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-            Envio
-          </span>
-        </Link>
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-2">
+            <img
+              src="/images/meder.jpg"
+              alt="Envio Logo"
+              className="w-12 h-12 object-contain rounded-full"
+            />
 
-        
+
+            <span className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+              Envio
+            </span>
+          </Link>
+
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  isActive(item.path)
-                    ? theme === 'dark' 
-                      ? 'text-blue-400 bg-blue-900/30'
-                      : 'text-blue-600 bg-blue-50'
-                    : theme === 'dark'
-                      ? 'text-gray-300 hover:text-blue-400 hover:bg-gray-800'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
-                }`}
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive(item.path)
+                  ? theme === 'dark'
+                    ? 'text-blue-400 bg-blue-900/30'
+                    : 'text-blue-600 bg-blue-50'
+                  : theme === 'dark'
+                    ? 'text-gray-300 hover:text-blue-400 hover:bg-gray-800'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                  }`}
               >
                 {item.label}
               </Link>
             ))}
-            
+
             {/* Theme and Language Switchers */}
             <div className={`flex items-center space-x-2 pl-4 border-l ${theme === 'dark' ? 'border-gray-700' : 'border-gray-300'}`}>
               <ThemeSwitcher />
@@ -94,15 +95,14 @@ export default function Navbar() {
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                    isActive(item.path)
-                      ? theme === 'dark'
-                        ? 'text-blue-400 bg-blue-900/30'
-                        : 'text-blue-600 bg-blue-50'
-                      : theme === 'dark'
-                        ? 'text-gray-300 hover:text-blue-400 hover:bg-gray-700'
-                        : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
-                  }`}
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.path)
+                    ? theme === 'dark'
+                      ? 'text-blue-400 bg-blue-900/30'
+                      : 'text-blue-600 bg-blue-50'
+                    : theme === 'dark'
+                      ? 'text-gray-300 hover:text-blue-400 hover:bg-gray-700'
+                      : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                    }`}
                 >
                   {item.label}
                 </Link>

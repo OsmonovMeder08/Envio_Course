@@ -7,63 +7,62 @@ export default function Courses() {
   const { t } = useLanguage();
   const { theme } = useTheme();
 
-  // Массив курсов с вызовом t() внутри useLanguage
   const courses = [
-  {
-    id: 1,
-    title: t('courses.englishBeginning.title'),
-    description: t('courses.englishBeginning.description'),
-    duration: 12,
-    level: t('courses.englishBeginning.level'),
-    price: '₽3,800',
-    image: 'https://liberianinvestigator.com/wp-content/uploads/2025/08/English.jpeg',
-  },
-  {
-    id: 2,
-    title: t('courses.englishElementary.title'),
-    description: t('courses.englishElementary.description'),
-    duration: 6,
-    level: t('courses.englishElementary.level'),
-    price: '₽3,800',
-    image: 'https://img.freepik.com/free-vector/hand-drawn-english-school-background_23-2149496629.jpg',
-  },
-  {
-    id: 3,
-    title: t('courses.englishPreIntermediate.title'),
-    description: t('courses.englishPreIntermediate.description'),
-    duration: 10,
-    level: t('courses.englishPreIntermediate.level'),
-    price: '₽3,800',
-    image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 4,
-    title: t('courses.englishIntermediate.title'),
-    description: t('courses.englishIntermediate.description'),
-    duration: 8,
-    level: t('courses.englishIntermediate.level'),
-    price: '₽3,800',
-    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 5,
-    title: t('courses.englishUpperIntermediate.title'),
-    description: t('courses.englishUpperIntermediate.description'),
-    duration: 14,
-    level: t('courses.englishUpperIntermediate.level'),
-    price: '₽3,800',
-    image: 'https://images.pexels.com/photos/3184634/pexels-photo-3184634.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-  {
-    id: 6,
-    title: t('courses.englishAdvanced.title'),
-    description: t('courses.englishAdvanced.description'),
-    duration: 8,
-    level: t('courses.englishAdvanced.level'),
-    price: '₽3,800',
-    image: 'https://images.pexels.com/photos/3184424/pexels-photo-3184424.jpeg?auto=compress&cs=tinysrgb&w=400',
-  },
-];
+    {
+      id: 1,
+      title: t('courses.englishBeginning.title'),
+      description: t('courses.englishBeginning.description'),
+      duration: 12,
+      level: t('courses.englishBeginning.level'),
+      price: t('courses.englishIntermediate.price'),
+      image: 'https://liberianinvestigator.com/wp-content/uploads/2025/08/English.jpeg',
+    },
+    {
+      id: 2,
+      title: t('courses.englishElementary.title'),
+      description: t('courses.englishElementary.description'),
+      duration: 6,
+      level: t('courses.englishElementary.level'),
+      price: t('courses.englishElementary.price'),
+      image: 'https://img.freepik.com/free-vector/hand-drawn-english-school-background_23-2149496629.jpg',
+    },
+    {
+      id: 3,
+      title: t('courses.englishPreIntermediate.title'),
+      description: t('courses.englishPreIntermediate.description'),
+      duration: 10,
+      level: t('courses.englishPreIntermediate.level'),
+      price: t('courses.englishPreIntermediate.price'),
+      image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=400',
+    },
+    {
+      id: 4,
+      title: t('courses.englishIntermediate.title'),
+      description: t('courses.englishIntermediate.description'),
+      duration: 8,
+      level: t('courses.englishIntermediate.level'),
+      price: t('courses.englishIntermediate.price'),
+      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400',
+    },
+    {
+      id: 5,
+      title: t('courses.englishUpperIntermediate.title'),
+      description: t('courses.englishUpperIntermediate.description'),
+      duration: 14,
+      level: t('courses.englishUpperIntermediate.level'),
+      price: t('courses.englishUpperIntermediate.price'),
+      image: 'https://images.pexels.com/photos/3184634/pexels-photo-3184634.jpeg?auto=compress&cs=tinysrgb&w=400',
+    },
+    {
+      id: 6,
+      title: t('courses.englishAdvanced.title'),
+      description: t('courses.englishAdvanced.description'),
+      duration: 8,
+      level: t('courses.englishAdvanced.level'),
+      price: t('courses.englishAdvanced.price'),
+      image: 'https://images.pexels.com/photos/3184424/pexels-photo-3184424.jpeg?auto=compress&cs=tinysrgb&w=400',
+    },
+  ];
 
 
 
@@ -86,8 +85,8 @@ export default function Courses() {
               className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-white'} rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:scale-105`}
             >
               <div className="h-48 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
-                <img 
-                  src={course.image} 
+                <img
+                  src={course.image}
                   alt={course.title}
                   className="w-full h-full object-cover"
                 />
@@ -99,7 +98,7 @@ export default function Courses() {
                 <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
                   {course.description}
                 </p>
-                
+
                 <div className="flex items-center justify-between mb-4">
                   <div className={`flex items-center space-x-1 text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>
                     <Clock className="w-4 h-4" />
@@ -110,7 +109,7 @@ export default function Courses() {
                     <span>{course.level}</span>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center justify-between">
                   <div className={`flex items-center space-x-1 text-2xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
                     <DollarSign className="w-6 h-6" />

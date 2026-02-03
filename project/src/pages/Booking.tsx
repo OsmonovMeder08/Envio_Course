@@ -21,21 +21,21 @@ export default function Booking() {
   });
 
   const courses = [
-    { id: '1', name: 'Web Development' },
-    { id: '2', name: 'Data Science' },
-    { id: '3', name: 'Business Analytics' },
-    { id: '4', name: 'UX/UI Design' },
-    { id: '5', name: 'Digital Marketing' },
-    { id: '6', name: 'Cloud Computing' },
+    { id: '1', name: 'English Elementary' },
+    { id: '2', name: 'English Advanced' },
+    { id: '3', name: 'English Beginning' },
+    { id: '4', name: 'English Intermediate' },
+    { id: '5', name: 'English Pre-Intermediate' },
+    { id: '6', name: 'English Upper-Intermediate' },
   ];
 
   const teachers = [
-    { id: '1', name: 'Анна Петрова', specialty: 'Web Development' },
-    { id: '2', name: 'Дмитрий Иванов', specialty: 'Data Science' },
-    { id: '3', name: 'Мария Сидорова', specialty: 'UX/UI Design' },
-    { id: '4', name: 'Алексей Козлов', specialty: 'Digital Marketing' },
-    { id: '5', name: 'Елена Васильева', specialty: 'Business Analytics' },
-    { id: '6', name: 'Сергей Николаев', specialty: 'Cloud Computing' },
+    { id: '1', name: 'Daniel Eshabev', specialty: 'English Elementary' },
+    { id: '2', name: 'Osmonov Meder', specialty: 'English Advanced' },
+    { id: '3', name: 'Artykov Aziret', specialty: 'English Beginning' },
+    { id: '4', name: 'Topchubekov Ilimbek', specialty: 'English Intermediate' },
+    { id: '5', name: 'Artykova Jumaida', specialty: 'English Pre-Intermediate' },
+    { id: '6', name: 'Artykova Ayat', specialty: 'English Upper-Intermediate' },
   ];
 
   const timeSlots = [
